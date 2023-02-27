@@ -5,6 +5,7 @@ export function alertButton() {
     const arrayalertButton = document.querySelectorAll("#portfolio");
     const alertContent = document.querySelector('.alert__content');
     const header = document.querySelector('.header');
+    //const alertMessage = document.querySelector('#alert-message');
     // console.log(arrayalertButton);
 
     arrayalertButton.forEach(alertButton => {
