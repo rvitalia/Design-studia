@@ -4219,8 +4219,15 @@ body {
     -webkit-transform: translateY(50%);
     transform: translateY(50%);
     cursor: pointer;
-    opacity: 0.7;
-    transition: all 0.4s linear;
+    opacity: 0.4;
+    transition: all 0.2s linear;
+}
+
+.slide__left:hover,
+.slide__right:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.1) translateY(50%);
+    transform: scale(1.1) translateY(50%);
 }
 
 .slide__right {
@@ -6510,6 +6517,7 @@ textarea {
     background-repeat: no-repeat;
     background-size: 95%;
     transition: all 0.2s linear;
+    fill: #fff;
 }
 
 .footer__inner__bottom__icon__social__items:not(:last-child) {
@@ -6518,29 +6526,11 @@ textarea {
 }
 
 .footer__inner__bottom__icon__social__items:hover {
-    margin-top: -4rem;
+    margin-top: -2rem;
+    fill: #2DBE96;
 }
 
-.social__items__vk {
-    background-image: url(../images/footer/Vk.svg);
-}
-
-.social__items__vk:hover {
-    background-image: url(../images/footer/Vkaccent.svg);
-}
-
-.social__item__mail {
-    background-image: url(../images/footer/mail.svg);
-}
-
-.social__item__mail:hover {
-    background-image: url(../images/footer/mailaccent.svg);
-}
-
-.social__item__inst {
-    background-image: url(../images/footer/Be.svg);
-}
-
-.social__item__inst:hover {
-    background-image: url(../images/footer/Beaccent.svg);
+.footer__inner__bottom__icon__social__items > svg {
+    width: 4rem;
+    height: 4rem;
 }
