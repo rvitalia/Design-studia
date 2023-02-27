@@ -40,7 +40,6 @@
 
 
 .slide {
-    background-image: url(../images/slider/Union.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 70%;
@@ -50,6 +49,27 @@
     border: 3px solid $light-color;
     border-radius: 1rem;
     transform: translateX(6.1rem);
+    fill: $light-color;
+    transition: all 0.2s linear;   
+
+    &:hover{
+        fill: $accent-color;
+        border-color: $accent-color;
+    }
+}
+.slide__inner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & > svg{
+        display: block;
+        width: 100%;
+        max-width: 16.385rem;
+        height: 100%;
+        max-height: 20.535rem;
+    }
 }
 
 .slick-slide {
@@ -72,17 +92,18 @@
         0 0 1rem $accent-color,
         inset 0 0 1.3rem $accent-color;
     border-color: $accent-color;
-    background-image: url(../images/slider/UnionGreen.svg);
+    fill: $accent-color;
 }
 
-.slide {
-    transition: all 0.4s linear;
+// .slide {
+//     transition: all 0.4s linear;
 
-    &:hover {
-        border-color: $accent-color;
-        background-image: url(../images/slider/UnionGreen.svg);
-    }
-}
+//     &:hover {
+//         border-color: $accent-color;
+//         fill: $accent-color;
+//         //background-image: url(../images/slider/UnionGreen.svg);
+//     }
+// }
 
 .my-slick-dots {
     display: flex;
