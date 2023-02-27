@@ -150,24 +150,19 @@
     z-index: 1;
     transform: translateY(50%);
     cursor: pointer;
-    opacity: 0.7;
-    transition: all 0.4s linear;
+    opacity: 0.4;
+    transition: all 0.2s linear;
 
-    // @include large-mobile-for-slider{
-    //     transform: none;
-    //     bottom: -7rem;
-    // }
+    &:hover {
+        opacity: 1;
+        transform: scale(1.1) translateY(50%);
+    }
+
 }
 
 .slide__right {
     background-image: url(../images/slider/ArrowLeft.svg);
     left: -4rem;
-    // left: 0;
-
-    // &:hover {
-    //     background-image: url(../images/slider/ALH.svg);
-    //     opacity: 1;
-    // }
 
     @include tablet {
         left: -2rem;
@@ -177,12 +172,6 @@
 .slide__left {
     background-image: url(../images/slider/ArrowRight.svg);
     right: -9rem;
-
-
-    // &:hover {
-    //     background-image: url(../images/slider/ARH.svg);
-    //     opacity: 1;
-    // }
 
     @include tablet {
         right: -5rem;
