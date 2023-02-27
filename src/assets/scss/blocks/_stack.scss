@@ -1,0 +1,164 @@
+.stack {
+    width: 100%;
+    height: auto;
+}
+
+.stack__inner {
+    width: 100%;
+    height: auto;
+}
+
+.stack__inner__title {
+    font-family: 'Prosto';
+    font-weight: 400;
+    font-size: 6.4rem;
+    line-height: 8.1rem;
+    text-align: center;
+    margin-bottom: 3.6rem;
+
+    @include small-tablet {
+        font-size: 4.5rem;
+    }
+}
+
+.stack__inner__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.8rem;
+    margin-bottom: 7.2rem;
+}
+
+.stack__inner__list__item {
+    width: 100%;
+    max-width: 37.4rem;
+    height: 37.4rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 3px solid $light-color;
+    border-radius: 2rem;
+
+    @include for-mefium-desktop-servise {
+        max-width: 32rem;
+        height: 32rem;
+        overflow: hidden;
+        border-width: 1px;
+
+    }
+
+    @include for-mefium-desktop {
+        max-width: 28rem;
+        height: 28rem;
+        // border-radius: 5rem;
+    }
+
+    @include for-desktop {
+        width: 100%;
+        max-width: 22rem;
+        height: 22rem;
+    }
+
+    @include small-tablet {
+        width: 100%;
+        max-width: 18rem;
+        height: 18rem;
+    }
+
+    @include mobile {
+        width: 100%;
+        max-width: 12rem;
+        height: 12rem;
+    }
+
+
+}
+
+// .stack__svg {
+//     fill: $light-color;
+//     transition: all 0.4s linear;
+//     max-width: 25rem;
+//     max-height: 25rem;
+//     display: block;
+
+//     &:hover {
+//         fill: $accent-color;
+//     }
+
+//     @include for-desktop {
+//         width: 100%;
+//         max-width: 20rem;
+//         max-height: 20rem;
+//     }
+
+//     @include small-tablet {
+//         width: 100%;
+//         max-width: 15rem;
+//         max-height: 15rem;
+//     }
+
+//     @include mobile {
+//         width: 100%;
+//         max-width: 10rem;
+//         max-height: 10rem;
+//     }
+// }
+
+
+.accentsvg {
+    fill: $accent-color;
+}
+
+
+.stack__inner__list__item__icon {
+    display: block;
+
+    &  > svg {
+        width: 25rem;
+        height: 25rem;
+    }
+
+    @include bg-cover;
+    transition: all 0.4s linear;
+    fill: white;
+
+    &:hover {
+        fill: $accent-color;
+    }
+
+    @include for-desktop {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & > svg{
+            width: 20rem;
+            height: 20rem;  
+        }
+
+    }
+
+    @include small-tablet {
+        background-size: contain;
+        width: 100%;
+        max-width: 15rem;
+        height: 15rem;
+    }
+
+    @include mobile {
+        width: 100%;
+        max-width: 10rem;
+        height: 10rem;
+    }
+}
+
+.react{
+    stroke: white;
+
+    &:hover{
+        stroke: #2DBE96;
+    }
+}
