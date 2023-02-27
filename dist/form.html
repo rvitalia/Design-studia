@@ -56,14 +56,15 @@
             </div>
         </header>
         <main class="main">
-            <form action="sendmail.php" method="post">
-                <label for="" class="">
-                    <input type="text">
+            <form action="sendmail.php" method="post" enctype="multipart/form-data">
+                <label for="" class="" > Email
+                    <input type="email" name="email">
                 </label>
-                <label for="" class="">
-                    <input type="password">
+            
+                <label for="" class="" >Сообщение
+                    <textarea type="text" name="message"></textarea>
                 </label>
-                <label for="">прикрепить<input type="file"></label>
+                <label for="">прикрепить<input type="file" name="file"></label>
                 <button type="submit">send</button>
             </form>
         </main>
