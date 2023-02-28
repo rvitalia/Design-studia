@@ -3346,19 +3346,18 @@ body {
   }
   .stack__inner__list__item__icon > svg {
     width: 20rem;
-    height: 20rem;
+    height: 18rem;
   }
 }
 @media (max-width: 768px) {
-  .stack__inner__list__item__icon {
-    background-size: contain;
+  .stack__inner__list__item__icon > svg {
     width: 100%;
     max-width: 15rem;
     height: 15rem;
   }
 }
 @media (max-width: 576px) {
-  .stack__inner__list__item__icon {
+  .stack__inner__list__item__icon > svg {
     width: 100%;
     max-width: 10rem;
     height: 10rem;
