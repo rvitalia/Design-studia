@@ -1445,34 +1445,31 @@ body {
 
 .section__top-background {
     position: absolute;
-    width: 798px;
+    width: 898px;
     height: 778px;
-    right: -65px;
+    right: -165px;
     top: -95px;
     z-index: -1;
 }
 
-.section__top-background img {
-    width: 100%;
+.section____top-background__men {
+    position: absolute;
+    z-index: 90;
+    margin-left: 140px;
+    width: 660px;
+    height: 680px;
 }
 
-.section__top-background::after {
-    content: "";
-    background-image: url(../images/sectiontop/Vector84.png);
-    height: 25.1rem;
-    width: 113.4rem;
-    position: absolute;
-    bottom: -4px;
-    right: -13.8rem;
-    z-index: 0;
+.section____top-background__men img {
+    width: 100%;
 }
 
 .section__top-background__neon {
     position: absolute;
     top: -136px;
-    left: 59px;
+    left: 9px;
     z-index: -1;
-    width: 92rem;
+    width: 91rem;
     height: 92rem;
 }
 
@@ -1483,7 +1480,6 @@ body {
     z-index: -1;
     width: 66rem;
     height: 66rem;
-    border-radius: 50%;
 }
 
 .section__top-background__neon__shadow::after {
@@ -1606,7 +1602,7 @@ body {
 
 @media (max-width: 1590px) {
     .section__top-background {
-        right: 0;
+        right: -50px;
     }
 }
 
@@ -1638,15 +1634,21 @@ body {
         bottom: -11rem;
     }
 
-    .section__top-background__owner {
+    .section____top-background__men {
+        position: absolute;
+        z-index: 90;
+        margin-left: 120px;
+        width: 440px;
+        height: 460px;
+    }
+
+    .section____top-background__men img {
         width: 100%;
-        max-width: 50rem;
-        height: auto;
     }
 
     .section__top-background__neon {
         left: 3.5rem;
-        width: 90%;
+        width: 100%;
         height: 90%;
         top: -6.5rem;
     }
@@ -1683,7 +1685,8 @@ body {
 @media (max-width: 1036px) {
     .section__top-background {
         height: 500px;
-        top: -25px;
+        right: 25px;
+        top: 5px;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-pack: end;
@@ -1701,10 +1704,16 @@ body {
         right: -12rem;
     }
 
-    .section____top-background__owner {
+    .section____top-background__men {
+        position: absolute;
+        z-index: 90;
+        margin-left: 120px;
+        width: 420px;
+        height: 440px;
+    }
+
+    .section____top-background__men img {
         width: 100%;
-        max-width: 50rem;
-        height: auto;
     }
 
     .section__top-background__neon {
@@ -1750,13 +1759,7 @@ body {
     .section__top-background {
         width: 450px;
         height: 450px;
-        top: -5px;
-    }
-
-    .section__top-background__owner {
-        width: 100%;
-        max-width: 40rem;
-        height: auto;
+        top: 15px;
     }
 
     .section__top-background::after {
@@ -1765,16 +1768,23 @@ body {
     }
 
     .section__top-background__neon {
-        left: 3rem;
-        width: 50rem;
+        left: 4rem;
+        width: 50.5rem;
         height: 50rem;
         top: -10rem;
     }
 
+    .section____top-background__men {
+        position: absolute;
+        right: -2rem;
+        width: 340px;
+        height: 360px;
+    }
+
     .section__top-background__neon__shadow::after {
-        width: 35rem;
-        height: 35rem;
-        left: -5rem;
+        width: 35.5rem;
+        height: 35.5rem;
+        left: -1rem;
         top: -2rem;
     }
 
@@ -1813,8 +1823,8 @@ body {
     }
 
     .section__top-background__neon {
-        left: 2rem;
-        width: 38rem;
+        left: 1rem;
+        width: 37rem;
         height: 38rem;
         top: -7rem;
     }
@@ -1824,6 +1834,13 @@ body {
         height: 27rem;
         left: -68px;
         top: -7px;
+    }
+
+    .section____top-background__men {
+        position: absolute;
+        right: 2rem;
+        width: 260px;
+        height: 280px;
     }
 
     .section__top {
