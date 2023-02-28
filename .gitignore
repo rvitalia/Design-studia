@@ -1,8 +1,2 @@
 node_modules
 dist
-.vscode
-.babelrc
-gulpfile.js
-package-lock.json
-package.json
-webpack.config.js
