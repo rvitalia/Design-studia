@@ -3423,7 +3423,7 @@ body {
   border-radius: 1rem;
   transform: translateX(6.1rem);
   fill: #fff;
-  transition: all 0.2s linear;
+  transition: all 0.3s ease-in-out;
 }
 .slide:hover {
   fill: #2DBE96;

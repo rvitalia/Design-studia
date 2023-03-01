@@ -50,7 +50,7 @@
     border-radius: 1rem;
     transform: translateX(6.1rem);
     fill: $light-color;
-    transition: all 0.2s linear;   
+    transition: all 0.3s ease-in-out;   
 
     &:hover{
         fill: $accent-color;
