@@ -4162,12 +4162,17 @@ body {
     align-items: center;
 }
 
-.slide__inner > svg {
-    display: block;
-    width: 100%;
-    max-width: 16.385rem;
-    height: 100%;
-    max-height: 20.535rem;
+.slider__inner__href__item {
+    max-width: 15rem;
+    max-height: 19rem;
+    transition: all 0.2s linear;
+    opacity: 0.7;
+}
+
+.slider__inner__href__item:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 1;
 }
 
 @media (max-width: 700px) {
