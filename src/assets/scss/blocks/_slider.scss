@@ -50,7 +50,7 @@
     border-radius: 1rem;
     transform: translateX(6.1rem);
     fill: $light-color;
-    transition: all 0.2s linear;   
+    transition: all 0.3s ease-in-out;   
 
     &:hover{
         fill: $accent-color;
@@ -63,12 +63,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    & > svg{
-        display: block;
-        width: 100%;
-        max-width: 16.385rem;
-        height: 100%;
-        max-height: 20.535rem;
+    // & > svg{
+    //     display: block;
+    //     width: 100%;
+    //     max-width: 16.385rem;
+    //     height: 100%;
+    //     max-height: 20.535rem;
+    // }
+}
+
+.slider__inner__href__item{
+    max-width: 15rem;
+    max-height: 19rem;
+    transition: all 0.2s linear;
+    opacity: 0.7;
+
+    &:hover{
+        transform: scale(1.2);
+        opacity: 1;
     }
 }
 
@@ -150,24 +162,19 @@
     z-index: 1;
     transform: translateY(50%);
     cursor: pointer;
-    opacity: 0.7;
-    transition: all 0.4s linear;
+    opacity: 0.4;
+    transition: all 0.2s linear;
 
-    // @include large-mobile-for-slider{
-    //     transform: none;
-    //     bottom: -7rem;
-    // }
+    &:hover {
+        opacity: 1;
+        transform: scale(1.1) translateY(50%);
+    }
+
 }
 
 .slide__right {
     background-image: url(../images/slider/ArrowLeft.svg);
     left: -4rem;
-    // left: 0;
-
-    // &:hover {
-    //     background-image: url(../images/slider/ALH.svg);
-    //     opacity: 1;
-    // }
 
     @include tablet {
         left: -2rem;
@@ -177,12 +184,6 @@
 .slide__left {
     background-image: url(../images/slider/ArrowRight.svg);
     right: -9rem;
-
-
-    // &:hover {
-    //     background-image: url(../images/slider/ARH.svg);
-    //     opacity: 1;
-    // }
 
     @include tablet {
         right: -5rem;

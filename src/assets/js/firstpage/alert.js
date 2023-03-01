@@ -5,27 +5,41 @@ export function alertButton() {
     const arrayalertButton = document.querySelectorAll("#portfolio");
     const alertContent = document.querySelector('.alert__content');
     const header = document.querySelector('.header');
-    // console.log(arrayalertButton);
+    const alertMessage = document.querySelector('#alert-message');
+    //  console.log(alertMessage);
+
+
+    function openAlert (text = 'На сайте ведутся технические работы'){
+        alert.classList.add("_open-alert");
+
+        setTimeout(function () {
+            alert.style.opacity = "1";
+            alertMessage.innerText = text;
+        }, 400)
+
+        if(header.classList.contains('activebg')){
+            header.classList.remove('activebg');
+        }
+    }
 
     arrayalertButton.forEach(alertButton => {
         if (alertButton) {
-
-
             alertButton.addEventListener("click", function (event) {
                 event.preventDefault();
-                alert.classList.add("_open-alert");
-
-                setTimeout(function () {
-                    alert.style.opacity = "1";
-                }, 400)
-
-                if(header.classList.contains('activebg')){
-                    header.classList.remove('activebg');
-                }
+                openAlert ();
             });
         };
 
     });
+
+    if(document.querySelector('#filebutton')){
+        const fileButton = document.querySelector('#filebutton');
+        fileButton.addEventListener('click', ()=>{
+            let error = 'Данная функция сейчас временно недоступна';
+            openAlert(error);
+        });
+    }
+    
 
 
     const alertCancel = document.querySelector('.alert__cancel');

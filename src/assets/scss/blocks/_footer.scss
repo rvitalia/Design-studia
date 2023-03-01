@@ -167,6 +167,7 @@
     @include bg-cover;
     background-size: 95%;
     transition: all 0.2s linear;
+    fill: $light-color;
 
     &:not(:last-child){
         display: block;
@@ -174,28 +175,12 @@
     }
 
     &:hover{
-        margin-top: -4rem;
+        margin-top: -2rem;
+        fill: $accent-color;
     }
-}
 
-.social__items__vk{
-    background-image: url(../images/footer/Vk.svg);
-
-    &:hover{
-        background-image: url(../images/footer/Vkaccent.svg);
-    }
-}
-.social__item__mail{
-    background-image: url(../images/footer/mail.svg);
-
-    &:hover{
-        background-image: url(../images/footer/mailaccent.svg);
-    }
-}
-.social__item__inst{
-    background-image: url(../images/footer/Be.svg);
-
-    &:hover{
-        background-image: url(../images/footer/Beaccent.svg);
+    & > svg{
+        width: 4rem;
+        height: 4rem;
     }
 }
