@@ -10,24 +10,11 @@ import { neonPartners } from "./neonPartners";
 
 import { burger } from "./burger";
 import { VivusLines } from "./VivusJSLines";
+import { changeColor, closePopupServises, openPopupServises } from "./services";
 
 
 
-function changeColor() {
-    let buttons = document.querySelectorAll('[data-filter="servises"]');
 
-    buttons.forEach(element => {
-        element.addEventListener('mouseover', () => {
-            const parentEl = element.closest('.services__inner__wrapper__item__list');
-            const title = parentEl.querySelector('.services__inner__wrapper__item__list__title');
-            title.classList.add('accent');
-
-            element.addEventListener('mouseout', () => {
-                title.classList.remove('accent');
-            })
-        })
-    });
-}
 
 
 $('.slick-slider').slick({
@@ -110,10 +97,6 @@ AOS.init();
 
 
 //==========================вызовы===========================
-//изменения цвета на "сервисах"
-changeColor();
-//изменения цвета на "svg"
-// changeColorSvg();
 //подсветка при нажатии на кнопку партнеров
 neonPartners();
 //плавный скролл до якорных ссылок
@@ -131,5 +114,11 @@ popupCancel();
 // chooseNews();
 //вызов бургера модалки и уведомлений
 burger();
-//
+//прорисовка линий
 VivusLines();
+//изменения цвета на "сервисах"
+changeColor();
+//открытие popupServices
+openPopupServises();
+//закрытие popupServices
+closePopupServises();
