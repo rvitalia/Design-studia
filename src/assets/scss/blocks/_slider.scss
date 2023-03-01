@@ -63,12 +63,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    & > svg{
-        display: block;
-        width: 100%;
-        max-width: 16.385rem;
-        height: 100%;
-        max-height: 20.535rem;
+    // & > svg{
+    //     display: block;
+    //     width: 100%;
+    //     max-width: 16.385rem;
+    //     height: 100%;
+    //     max-height: 20.535rem;
+    // }
+}
+
+.slider__inner__href__item{
+    max-width: 15rem;
+    max-height: 19rem;
+    transition: all 0.2s linear;
+    opacity: 0.7;
+
+    &:hover{
+        transform: scale(1.2);
+        opacity: 1;
     }
 }
 
