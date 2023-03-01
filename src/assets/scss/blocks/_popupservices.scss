@@ -1,0 +1,139 @@
+.popup__services {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  transition: all 0.5s linear;
+  backdrop-filter: blur(6px);
+}
+
+.active__services{
+  display: block;
+}
+
+.popup__services-body {
+  width: 100%;
+  max-width: 129.5rem;
+  padding: 3.8rem 3.6rem 4.5rem 3.6rem;
+  background-image: url(../images/popupservices/bg.png);
+  background-size: cover;
+  border-radius: 2rem;
+ 
+}
+.popup__services-top {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.services__top-title {
+  font-family: 'RobotoFlex';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12.8rem;
+  line-height: 1.23;
+  span{
+    color: #2DBE96;
+  }
+}
+.services__top-logo {
+  width: 12.1rem;
+  height: 14.703rem;
+  background-image: url(../images/popupservices/monkeyservices.png);
+  background-size: cover;
+}
+.services__sections {
+  margin-top: 3.961rem;
+  padding-left: 7.5rem;
+}
+.services__section {
+  font-family: 'RobotoFlex';
+}
+.services__section-title {
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 1.18;
+  margin-bottom: 2.52rem;
+  padding-top: 3.6rem;
+  color: #2DBE96;
+}
+.services__section-items {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3.8rem;
+}
+.services__section-block{
+  padding-bottom: 5.8rem;
+  position: relative;
+  &::after{
+    position: absolute;
+    content:'';
+    width:70%;
+    height: 0.1rem;
+    background-color: #2DBE96;
+    left: 13.1rem;
+    bottom: 0;
+  }
+
+}
+.services__section-end{
+  &::after{
+    display: none;
+  }
+}
+.services__section-item {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.section__item-left {
+  width: 29.5rem;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 1.16;
+}
+.section__item-center {
+  width: 57.6rem;
+  font-weight: 500;
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.15;
+}
+.section__item-center-end{
+  width: 50.2rem;
+
+}
+.section__item-right {
+  width: 15.2rem;
+  color:#2DBE96;
+  font-weight: 600;
+  font-size: 3.2rem;
+  line-height: 1.18;
+}
+
+.section__item-right-end{
+  width: 21.8rem;
+}
+
+.services__buttons {
+  display: flex;
+  column-gap: 2.4rem;
+  justify-content: center;
+}
+.services__button {
+  margin-top: 3.6rem;
+  cursor:pointer;
+  font-family: 'RobotoFlex';
+  font-weight: 700;
+  font-size: 1.8rem;
+  padding: 1.7rem 5.5rem;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+  transition: all 0.3s ease 0s;
+  &:hover{
+    background-color: #2DBE96;
+    border: 1px solid #2DBE96;
+  }
+}
