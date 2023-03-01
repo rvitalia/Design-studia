@@ -1,1 +1,11 @@
 node_modules
+<<<<<<< Alexey
+=======
+dist
+.vscode
+.babelrc
+gulpfile.js
+package-lock.json
+package.json
+webpack.config.js
+>>>>>>> master
