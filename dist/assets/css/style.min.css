@@ -5395,7 +5395,3 @@ textarea ::placeholder {
   margin-top: -2rem;
   fill: #2DBE96;
 }
-.footer__inner__bottom__icon__social__items > svg {
-  width: 4rem;
-  height: 4rem;
-}
