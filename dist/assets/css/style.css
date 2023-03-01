@@ -4748,6 +4748,30 @@ textarea {
     box-shadow: 0px 0px 10px #2DBE96;
 }
 
+textarea {
+    font-family: "RobotoFLex";
+}
+
+textarea ::-webkit-input-placeholder {
+    font-family: "RobotoFlex";
+}
+
+textarea ::-moz-placeholder {
+    font-family: "RobotoFlex";
+}
+
+textarea :-ms-input-placeholder {
+    font-family: "RobotoFlex";
+}
+
+textarea ::-ms-input-placeholder {
+    font-family: "RobotoFlex";
+}
+
+textarea ::placeholder {
+    font-family: "RobotoFlex";
+}
+
 .contacts__customer-item {
     margin-top: 36px;
     display: -ms-flexbox;
