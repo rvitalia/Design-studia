@@ -107,8 +107,8 @@ form.onsubmit = async function(e) {
     
   }
 
-  let fileInput = document.getElementById('breefattach');
-  fileInput.addEventListener('change', fileValidation);
+  //let fileInput = document.getElementById('breefattach');
+  // fileInput.addEventListener('change', fileValidation);
   function fileValidation() {
   
     let filePath = fileInput.value;
@@ -171,7 +171,7 @@ clicking();
 //alert
 alertButton();
 
-sizeInput();
+//sizeInput();
 
 
 //фон

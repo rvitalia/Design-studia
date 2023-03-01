@@ -76,36 +76,6 @@
 
 }
 
-// .stack__svg {
-//     fill: $light-color;
-//     transition: all 0.4s linear;
-//     max-width: 25rem;
-//     max-height: 25rem;
-//     display: block;
-
-//     &:hover {
-//         fill: $accent-color;
-//     }
-
-//     @include for-desktop {
-//         width: 100%;
-//         max-width: 20rem;
-//         max-height: 20rem;
-//     }
-
-//     @include small-tablet {
-//         width: 100%;
-//         max-width: 15rem;
-//         max-height: 15rem;
-//     }
-
-//     @include mobile {
-//         width: 100%;
-//         max-width: 10rem;
-//         max-height: 10rem;
-//     }
-// }
-
 
 .accentsvg {
     fill: $accent-color;
@@ -136,22 +106,28 @@
 
         & > svg{
             width: 20rem;
-            height: 20rem;  
+            height: 18rem;  
         }
 
     }
 
     @include small-tablet {
-        background-size: contain;
-        width: 100%;
-        max-width: 15rem;
-        height: 15rem;
+
+        & > svg{
+            width: 100%;
+            max-width: 15rem;
+            height: 15rem; 
+        }
     }
 
     @include mobile {
-        width: 100%;
-        max-width: 10rem;
-        height: 10rem;
+        & > svg{
+            width: 100%;
+            max-width: 10rem;
+            height: 10rem;
+        }
+
+
     }
 }
 
