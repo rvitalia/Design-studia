@@ -14,9 +14,11 @@
 
 .active__services{
   display: block;
+  overflow: scroll;
 }
 
 .popup__services-body {
+  margin-top: 90rem;
   width: 100%;
   max-width: 129.5rem;
   padding: 3.8rem 3.6rem 4.5rem 3.6rem;
