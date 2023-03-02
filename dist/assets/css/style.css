@@ -3076,6 +3076,7 @@ body {
 }
 
 .header__logo span {
+    margin-right: -1rem;
     color: #2DBE96;
 }
 
@@ -4423,6 +4424,7 @@ textarea {
 }
 
 .form__input {
+    width: 100%;
     border: 1px solid #2DBE96;
     border-radius: 10px;
     padding: 14px 8px;
@@ -6596,9 +6598,11 @@ textarea ::placeholder {
 
 .active__services {
     display: block;
+    overflow: scroll;
 }
 
 .popup__services-body {
+    margin-top: 90rem;
     width: 100%;
     max-width: 129.5rem;
     padding: 3.8rem 3.6rem 4.5rem 3.6rem;

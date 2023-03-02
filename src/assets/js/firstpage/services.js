@@ -26,7 +26,6 @@ export function openPopupServises(){
             body.classList.add('_lock');
 
             setTimeout(function(){
-                popupServices.style.transform = 'rotateX(0)';
                 popupServices.style.opacity = '1';
             },300)
         })
@@ -44,7 +43,6 @@ export function closePopupServises(){
     });
 
     popupServices.addEventListener('click',() => {
-        popupServices.style.transform = 'rotateX(90deg)';
                 popupServices.style.opacity = '0';
 
                 setTimeout(function(){
