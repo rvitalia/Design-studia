@@ -24,13 +24,20 @@
   background-image: url(../images/popupservices/bg.png);
   background-size: cover;
   border-radius: 2rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  
+
   
 }
 .popup__services-top {
   align-items: center;
   display: flex;
   justify-content: space-between;
+
+
 }
+
 .services__top-title {
   font-family: 'RobotoFlex';
   font-style: normal;
@@ -40,6 +47,7 @@
   span{
     color: #2DBE96;
   }
+
 }
 .services__top-logo {
   width: 12.1rem;
@@ -140,4 +148,357 @@
     background-color: #2DBE96;
     border: 1px solid #2DBE96;
   }
+}
+
+@media(max-width:1440px){
+ 
+  .popup__services-body {
+    max-width: 110rem;
+    padding: 3.4rem 3.2rem 4.1rem 3.2rem;
+    
+  }
+  .services__top-title {
+    font-size: 11rem;
+  }
+  .services__top-logo {
+    width: 11rem;
+    height: 13rem;
+  }
+  .services__sections {
+    margin-top: 3.5rem;
+    padding-left: 7rem;
+  }
+  .services__section-title {
+    font-size: 2.8rem;
+    margin-bottom: 2.52rem;
+    padding-top: 3.6rem;
+  }
+  .services__section-items {
+    row-gap: 3.8rem;
+  }
+  .services__section-block{
+    padding-bottom: 5.4rem;
+  
+  }
+  
+  .section__item-left {
+    width: 20rem;
+    font-size: 2rem;
+  }
+  .section__item-center {
+    width: 40rem;
+    font-size: 1.6rem;
+  }
+  .section__item-center-end{
+    width: 37.3rem;
+  
+  }
+  .section__item-right {
+    width: 11rem;
+    font-size: 2rem;
+  }
+  
+  .section__item-right-end{
+    width: 13.7rem;
+  }
+  
+}
+
+@media(max-width:1024px){
+ 
+  .popup__services-body {
+    max-width: 110rem;
+    padding: 3.4rem 3.2rem 4.1rem 3.2rem;
+    margin-top: 55rem;
+    
+  }
+  .services__top-title {
+    font-size: 8rem;
+  }
+  .services__top-logo {
+    width: 8rem;
+    height: 10rem;
+  }
+  .services__sections {
+    margin-top: 3rem;
+    padding-left: 5rem;
+  }
+  .services__section-title {
+    font-size: 2.2rem;
+    margin-bottom: 2.52rem;
+    padding-top: 3rem;
+  }
+  .services__section-items {
+    row-gap: 2.8rem;
+  }
+  .services__section-block{
+    padding-bottom: 4rem;
+    &::after{
+      width:70%;
+      left: 10.1rem;
+    }
+  
+  }
+
+  .section__item-left {
+    width: 15rem;
+    font-size: 1.6rem;
+  }
+  .section__item-center {
+    width: 31rem;
+    font-size: 1.2rem;
+  }
+  .section__item-center-end{
+    width: 28rem;
+  
+  }
+  .section__item-right {
+    width: 8rem;
+    font-size: 1.6rem;
+  }
+  
+  .section__item-right-end{
+    width: 11rem;
+  }
+  .services__button {
+    margin-top: 2.8rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+    padding: 1.3rem 4.6rem;
+  } 
+}
+
+@media(max-width:860px){
+ 
+  .services__sections {
+    margin-top: 1.5rem;
+    padding-left: 3rem;
+  }
+  .section__item-center {
+    width: 26rem;
+    font-size: 1.2rem;
+  }
+  .section__item-center-end{
+    width: 23rem;
+  
+  }
+}
+@media(max-width:768px){
+ 
+  .popup__services-body {
+    max-width: 110rem;
+    padding: 2.6rem 2.4rem 3.5rem 2.6rem;
+    margin-top: 70rem;
+    
+  }
+
+  .services__top-title {
+    font-size: 6rem;
+  }
+  .services__top-logo {
+    width: 6rem;
+    height: 8rem;
+  }
+  .services__sections {
+    margin-top: 0.5rem;
+    padding-left: 2.2rem;
+  }
+  .services__section-title {
+    font-size: 2.2rem;
+    margin-bottom: 2.52rem;
+    padding-top: 3rem;
+  }
+  .services__section-items {
+    row-gap: 2.8rem;
+    column-gap: 5rem;
+  }
+  .services__section-item{
+    flex-wrap: wrap;
+    row-gap: 1.6rem;
+
+  }
+
+  .services__section-block{
+    padding-bottom: 4rem;
+    &::after{
+      width:100%;
+      left: 0rem;
+    }
+  }
+
+  .section__item-left {
+    width: 25rem;
+    font-size: 1.6rem;
+    order: 1;
+  }
+  .section__item-center {
+    width: 100%;
+    font-size: 1.2rem;
+    order: 3;
+
+  }
+  .section__item-center-end{
+    width: 100%;
+  }
+  .section__item-right {
+    width: 8rem;
+    font-size: 1.6rem;
+    order: 2; 
+  }
+  
+  .section__item-right-end{
+    width: 11rem;
+  }
+  .services__button {
+    margin-top: 2rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 1.0rem 3.5rem;
+  } 
+}
+@media(max-width:576px){
+  .popup__services-body {
+    padding: 2.6rem 2.4rem 3.5rem 2.6rem;
+    margin-top: 90rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    
+  }
+  .popup__services-top {
+    flex-wrap: wrap;
+    row-gap: 3.2rem;
+  }
+  .services__top-title {
+    font-size: 3.8rem;
+    width: 100%;
+    order: 1;
+ 
+  }
+  .services__top-logo {
+    width: 4.5rem;
+    height: 6rem;
+    order: 0;
+    margin: 0 auto;
+  }
+  .services__sections {
+    margin-top: 0rem;
+    padding-left: 0rem;
+  }
+  .services__section-title {
+    font-size: 2.4rem;
+    margin-bottom: 1.6rem;
+    padding-top: 2.4rem;
+  }
+  .services__section-items {
+    row-gap: 2.8rem;
+    column-gap: 5rem;
+  }
+  .services__section-item{
+    flex-wrap: wrap;
+    row-gap: 1.6rem;
+
+  }
+
+  .services__section-block{
+    padding-bottom: 3.2rem;
+    &::after{
+      width:100%;
+      left: 0rem;
+    }
+  }
+
+  .section__item-left {
+    width: 25rem;
+    font-size: 1.8rem;
+    order: 1;
+  }
+  .section__item-center {
+    width: 100%;
+    font-size: 1.4rem;
+    order: 3;
+
+  }
+  .section__item-center-end{
+    width: 100%;
+  }
+  .section__item-right {
+    width: 9rem;
+    font-size: 1.8rem;
+    order: 2; 
+  }
+  
+  .section__item-right-end{
+    width: 12.5rem;
+  }
+  .services__button {
+    margin-top: 0rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 2.05rem 3rem;
+  } 
+}
+
+@media(max-width:460px){
+  .popup__services-body {
+    margin-top: 85rem; 
+  }
+  .popup__services-top {
+    row-gap: 2.8rem;
+  }
+  .services__top-title {
+    font-size: 3.8rem;
+    width: 100%;
+    order: 1;
+ 
+  }
+
+  .services__section-title {
+    font-size: 2.0rem;
+  }
+  .services__section-items {
+    row-gap: 2.5rem;
+    column-gap: 4rem;
+  }
+  .services__section-item{
+    flex-wrap: wrap;
+    row-gap: 1.6rem;
+
+  }
+  .services__section-block{
+    padding-bottom: 2.8rem;
+  }
+
+  .section__item-left {
+    width: 15rem;
+    font-size: 1.4rem;
+    order: 1;
+  }
+  .section__item-center {
+    width: 100%;
+    font-size: 1.2rem;
+    order: 3;
+
+  }
+  .section__item-center-end{
+    width: 100%;
+  }
+  .section__item-right {
+    width: auto;
+    font-size: 1.2rem;
+    order: 2; 
+  }
+  
+  .section__item-right-end{
+    width: auto;
+  }
+  .services__button {
+    margin-top: 0rem;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 1.5rem 1.5rem;
+    
+  } 
+  .services__buttons{
+    justify-content: space-between;
+  } 
 }
