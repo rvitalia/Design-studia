@@ -34,9 +34,20 @@ export function openPopupServises(){
 }
 
 export function closePopupServises(){
+    const popupClose = document.querySelector('.popupservices__close');
     const popupServices = document.querySelector('#popupservices');
     const popupBody = document.querySelector('.popup__services-body');
     const body = document.querySelector('body');
+
+
+    popupClose.addEventListener('click',() => {
+        popupServices.style.opacity = '0';
+
+        setTimeout(function(){
+            popupServices.classList.remove('active__services');
+            body.classList.remove('_lock');
+        },300)   
+})
 
     popupBody.addEventListener('click',(event) => {
         event.stopPropagation();

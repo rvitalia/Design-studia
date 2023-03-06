@@ -11,9 +11,10 @@
     opacity: 1;
 }
 .active{
-    // transform: translateY(1rem);
     border: 2px solid #2DBE96;
     box-shadow: 0px 0px 8px #2DBE96;
+    transform: translateY(0);
+
 }
 .active .top__card-img{
     transform: scale(1.3);

@@ -9,7 +9,7 @@ import { buttonOrder, popupCancel } from "./buttonOrder";
 import { neonPartners } from "./neonPartners";
 
 import { burger } from "./burger";
-import { VivusLines } from "./VivusJSLines";
+import { chooseNews, VivusLines } from "./VivusJSLines";
 import { changeColor, closePopupServises, openPopupServises } from "./services";
 
 

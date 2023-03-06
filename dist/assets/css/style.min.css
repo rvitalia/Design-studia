@@ -1612,6 +1612,7 @@ body {
 .active {
   border: 2px solid #2DBE96;
   box-shadow: 0px 0px 8px #2DBE96;
+  transform: translateY(0);
 }
 
 .active .top__card-img {
@@ -2500,7 +2501,6 @@ body {
   color: #ffffff;
 }
 .header__logo span {
-  margin-right: -1rem;
   color: #2DBE96;
 }
 
@@ -5257,7 +5257,7 @@ textarea ::placeholder {
   display: flex;
   flex-direction: column;
   text-align: left;
-  width: 45%;
+  width: 49%;
 }
 @media (max-width: 992px) {
   .footer__inner__content__wrapper--first {
@@ -5396,6 +5396,24 @@ textarea ::placeholder {
   opacity: 0;
 }
 
+.popupservices__close {
+  width: 7.7rem;
+  height: 7.7rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  background-image: url(../images/popupservices/basil_cross-outline.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.popupservices__close:hover {
+  scale: 1.1;
+}
+
 .active__services {
   display: block;
   overflow: scroll;
@@ -5404,8 +5422,8 @@ textarea ::placeholder {
 .popup__services-body {
   margin-top: 90rem;
   width: 100%;
-  max-width: 129.5rem;
-  padding: 3.8rem 3.6rem 4.5rem 3.6rem;
+  max-width: 138.5rem;
+  padding: 3.8rem 11.6rem 4.5rem 3.6rem;
   background-image: url(../images/popupservices/bg.png);
   background-size: cover;
   border-radius: 2rem;
