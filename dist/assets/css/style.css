@@ -1989,6 +1989,8 @@ body {
 .active {
     border: 2px solid #2DBE96;
     box-shadow: 0px 0px 8px #2DBE96;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
 }
 
 .active .top__card-img {
@@ -3077,7 +3079,6 @@ body {
 }
 
 .header__logo span {
-    margin-right: -1rem;
     color: #2DBE96;
 }
 
@@ -6427,6 +6428,8 @@ textarea ::placeholder {
 }
 
 .footer__inner__content__wrapper__title {
+    -ms-flex-positive: 1;
+    flex-grow: 1;
     font-family: "Inter";
     font-weight: 700;
     font-size: 2.4rem;
@@ -6447,9 +6450,17 @@ textarea ::placeholder {
     }
 }
 
+@media (max-width: 576px) {
+    .footer__inner__content__wrapper__title {
+        font-size: 1.6rem;
+        line-height: 1.4;
+    }
+}
+
 @media (max-width: 350px) {
     .footer__inner__content__wrapper__title {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
+        line-height: 1.2;
     }
 }
 
@@ -6472,6 +6483,7 @@ textarea ::placeholder {
 @media (max-width: 350px) {
     .footer__inner__content__wrapper__link {
         font-size: 1rem;
+        line-height: 1.2;
     }
 }
 
@@ -6521,6 +6533,13 @@ textarea ::placeholder {
     }
 }
 
+@media (max-width: 576px) {
+    .footer__inner__bottom__icon {
+        width: 4rem;
+        height: 6rem;
+    }
+}
+
 .footer__inner__bottom__icon__social {
     display: -ms-flexbox;
     display: flex;
@@ -6532,19 +6551,24 @@ textarea ::placeholder {
 }
 
 .footer__inner__bottom__icon__social__items {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
     width: 5.5rem;
     height: 5.5rem;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: 95%;
     transition: all 0.2s linear;
     fill: #fff;
 }
 
 .footer__inner__bottom__icon__social__items:not(:last-child) {
-    display: block;
     margin-right: 3.6rem;
+}
+
+@media (max-width: 576px) {
+    .footer__inner__bottom__icon__social__items:not(:last-child) {
+        margin-right: -1.6rem;
+    }
 }
 
 .footer__inner__bottom__icon__social__items:hover {
@@ -6553,8 +6577,17 @@ textarea ::placeholder {
 }
 
 .footer__inner__bottom__icon__social__items > svg {
+    display: block;
     width: 4rem;
     height: 4rem;
+    line-height: 2rem;
+}
+
+@media (max-width: 576px) {
+    .footer__inner__bottom__icon__social__items > svg {
+        width: 3rem;
+        height: 3rem;
+    }
 }
 
 .popup__services {
@@ -6571,6 +6604,25 @@ textarea ::placeholder {
     opacity: 0;
 }
 
+.popupservices__close {
+    width: 7.7rem;
+    height: 7.7rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-image: url(../images/popupservices/basil_cross-outline.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.popupservices__close:hover {
+    scale: 1.1;
+}
+
 .active__services {
     display: block;
     overflow: scroll;
@@ -6579,8 +6631,8 @@ textarea ::placeholder {
 .popup__services-body {
     margin-top: 90rem;
     width: 100%;
-    max-width: 129.5rem;
-    padding: 3.8rem 3.6rem 4.5rem 3.6rem;
+    max-width: 138.5rem;
+    padding: 3.8rem 11.6rem 4.5rem 3.6rem;
     background-image: url(../images/popupservices/bg.png);
     background-size: cover;
     border-radius: 2rem;
@@ -6595,6 +6647,7 @@ textarea ::placeholder {
     display: flex;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    margin-top: 10rem;
 }
 
 .services__top-title {
@@ -6629,7 +6682,7 @@ textarea ::placeholder {
     font-weight: 700;
     font-size: 3.2rem;
     line-height: 1.18;
-    margin-bottom: 2.52rem;
+    margin-bottom: 4rem;
     padding-top: 3.6rem;
     color: #2DBE96;
 }
@@ -6683,10 +6736,6 @@ textarea ::placeholder {
     line-height: 1.15;
 }
 
-.section__item-center-end {
-    width: 50.2rem;
-}
-
 .section__item-right {
     width: 15.2rem;
     color: #2DBE96;
@@ -6696,7 +6745,7 @@ textarea ::placeholder {
 }
 
 .section__item-right-end {
-    width: 21.8rem;
+    white-space: nowrap;
 }
 
 .services__buttons {
@@ -6783,10 +6832,6 @@ textarea ::placeholder {
     .section__item-center {
         width: 40rem;
         font-size: 1.6rem;
-    }
-
-    .section__item-center-end {
-        width: 37.3rem;
     }
 
     .section__item-right {
@@ -6984,6 +7029,7 @@ textarea ::placeholder {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         row-gap: 3.2rem;
+        margin-top: 0;
     }
 
     .services__top-title {
@@ -7140,8 +7186,8 @@ textarea ::placeholder {
     .services__button {
         margin-top: 0rem;
         font-weight: 500;
-        font-size: 1rem;
-        padding: 1.5rem 1.5rem;
+        font-size: 1.3rem;
+        padding: 1.7rem 1.7rem;
     }
 
     .services__buttons {
