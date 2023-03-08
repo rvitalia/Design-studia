@@ -15,7 +15,7 @@
     text-align: center;
     margin-bottom: 3.6rem;
 
-    @include mobile{
+    @include mobile {
         font-size: 4rem;
     }
 }
@@ -24,7 +24,7 @@
     display: flex;
     justify-content: space-between;
 
-    @include for-mefium-desktop-servise{
+    @include for-mefium-desktop-servise {
         flex-wrap: wrap;
     }
 }
@@ -36,73 +36,76 @@
     text-align: center;
     margin: 0 auto;
 
-    @include large-desktop{
-        margin-bottom:  4rem;
+    @include large-desktop {
+        margin-bottom: 4rem;
     }
 
-    @include for-mefium-desktop-servise{
+    @include for-mefium-desktop-servise {
         width: 45%;
         border: 1px solid rgba(255, 255, 255, 0.5);
         border-radius: 2rem;
         padding: 1rem 1.5rem;
         transition: all 0.2s linear;
 
-        &:active{
+        &:active {
             border-color: $accent-color;
             transform: translateY(-2rem);
         }
 
-        &:hover{
+        &:hover {
             border-color: $accent-color;
             transform: translateY(-2rem);
             box-shadow: 0px 0px 7px #2DBE96;
         }
     }
 
-    @include for-services{
+    @include for-services {
         width: 100%;
         max-width: 60%;
     }
-    @include tablet{
+
+    @include tablet {
         max-width: 65%;
     }
-    @include small-tablet{
+
+    @include small-tablet {
         max-width: 75%;
     }
 
-    @include large-mobile-for-slider{
+    @include large-mobile-for-slider {
         max-width: 85%;
     }
-    @include mini-mobile-for-footer{
+
+    @include mini-mobile-for-footer {
         max-width: 95%;
     }
 
 
 }
 
-.services__inner__wrapper__item__list{
+.services__inner__wrapper__item__list {
     display: flex;
     flex-direction: column;
     text-align: center;
-    
-    @include large-desktop{
-       // padding: 0 2rem;
+
+    @include large-desktop {
+        // padding: 0 2rem;
         //max-width: 44rem;
     }
 }
 
-.servises__inner__wrapper__item__list__border{
+.servises__inner__wrapper__item__list__border {
     display: flex;
     flex-direction: column;
     text-align: center;
     flex-grow: 1;
-    border-right: 1px solid $light-color; 
+    border-right: 1px solid $light-color;
 
-    &--last{
+    &--last {
         border: none;
     }
 
-    @include for-mefium-desktop-servise{
+    @include for-mefium-desktop-servise {
         border: none;
     }
 }
@@ -115,7 +118,7 @@
     margin-bottom: 3.1rem;
     transition: all 0.4s linear;
 
-    @include mobile{
+    @include mobile {
         font-size: 3rem;
         margin-bottom: 2rem;
         color: $accent-color;
@@ -131,30 +134,31 @@
     font-size: 2.4rem;
     line-height: 2.8rem;
     margin: 0 auto 3rem;
-    padding:  0 1rem;
+    padding: 0 1rem;
 
-    &--last{
+    &--last {
         padding-left: 4rem;
     }
 
-    & > b {
+    &>b {
         color: $accent-color;
     }
-    @include large-desktop{
+
+    @include large-desktop {
         // max-width: 44rem;
         margin-right: 1rem;
         font-size: 2.2rem;
         text-align: center;
     }
 
-    @include mobile{
+    @include mobile {
         font-size: 1.8rem;
         margin-bottom: 2rem;
     }
 }
 
 .services__inner__wrapper__item__list__ul {
-    list-style:disc;
+    list-style: disc;
     list-style-position: inside;
     // padding:  0 1rem;
 }
@@ -167,15 +171,15 @@
     line-height: 2.8rem;
     text-align: center;
 
-    &:last-child{
+    &:last-child {
         margin-bottom: 7.1rem;
     }
 
-    @include mobile{
+    @include mobile {
         font-size: 1.8rem;
-         margin-bottom: 0.5rem;
+        margin-bottom: 0.5rem;
 
-         &:last-child{
+        &:last-child {
             margin-bottom: 4.1rem;
         }
 
@@ -183,6 +187,7 @@
 }
 
 .services__inner__wrapper__item__list__button {
+    display: block;
     max-width: 38.4rem;
     border: 1px solid #FFFFFF;
     border-radius: 1.9rem;
@@ -193,37 +198,38 @@
     background-color: transparent;
     padding: 1.8rem 4.35rem;
     white-space: nowrap;
-    margin: 0 auto 1.2rem;
+    //margin: 0 auto 1.2rem;
     color: $light-color;
     transition: all 0.4s linear;
     cursor: pointer;
 
-    &:hover{
+    &:hover {
         color: $accent-color;
         border-color: $accent-color;
     }
 
-    @include mobile{
+    @include mobile {
         font-size: 2.2rem;
         max-width: 26rem;
         text-align: center;
         padding: 1.5rem 2.5rem;
         background-color: transparent;
         border-color: $accent-color;
-        margin:  0 auto 3rem;
+        margin: 0 auto 3rem;
 
-        &:hover{
+        &:hover {
             background-color: $accent-color;
             color: black;
         }
     }
-    & + .services__inner__wrapper__item__list__button{
-        margin: 0 auto 7.2rem;
+
+    &+.services__inner__wrapper__item__list__button {
+        margin-left:2rem;
     }
 }
 
 
-.accent{
+.accent {
     color: $accent-color;
 }
 
@@ -232,11 +238,14 @@
     width: 0.1rem;
     margin-top: 3rem;
 
-    @include for-mefium-desktop-servise{
+    @include for-mefium-desktop-servise {
         display: none;
     }
 }
-.buttons__container{
+
+.buttons__container {
     display: flex;
-    flex-direction: column;
+    justify-content: end;
+    margin-top: 3.6rem;
+    margin-bottom: 5.4rem;
 }

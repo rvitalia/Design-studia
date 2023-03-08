@@ -3191,6 +3191,7 @@ body {
 }
 
 .services__inner__wrapper__item__list__button {
+  display: block;
   max-width: 38.4rem;
   border: 1px solid #FFFFFF;
   border-radius: 1.9rem;
@@ -3201,7 +3202,6 @@ body {
   background-color: transparent;
   padding: 1.8rem 4.35rem;
   white-space: nowrap;
-  margin: 0 auto 1.2rem;
   color: #fff;
   transition: all 0.4s linear;
   cursor: pointer;
@@ -3226,7 +3226,7 @@ body {
   }
 }
 .services__inner__wrapper__item__list__button + .services__inner__wrapper__item__list__button {
-  margin: 0 auto 7.2rem;
+  margin-left: 2rem;
 }
 
 .accent {
@@ -3246,7 +3246,9 @@ body {
 
 .buttons__container {
   display: flex;
-  flex-direction: column;
+  justify-content: end;
+  margin-top: 3.6rem;
+  margin-bottom: 5.4rem;
 }
 
 .stack {
