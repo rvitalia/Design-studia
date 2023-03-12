@@ -7,16 +7,12 @@ import { filePreview } from './filepreview';
 import { alertButton } from '../firstpage/alert';
 import { sizeInput } from './sizeInput';
 import { particleJS } from '../firstpage/particle';
-import { Formspree } from './formspree';
 
 
-//  Formspree();
+
 //===========form=====================
-//===========Alex=====================
-
-form.onsubmit = async function(e) {
-    e.preventDefault();
-    let form = document.querySelector('.breef__form'),
+function validateForm(){
+  let form = document.querySelector('.breef__form'),
     formInputs = document.querySelectorAll('.js-input'),
     formTextarea = document.querySelectorAll('.js-textarea'),
     inputEmail = document.querySelector('.js-input-email'),
@@ -77,42 +73,11 @@ form.onsubmit = async function(e) {
     } else {
       inputEmail.classList.remove('error');
     };
-    
-    let data = new FormData(e.target);
-    fetch(e.target.action, {
-      method: form.method,
-      body: data,
-      headers: {
-          'Accept': 'application/json'
-      }
-    }).then(response => {
-      if (response.ok) {
-        alert("Форма успешно отправлена, мы скоро с вами свяжемся, спасибо!") ;
-        form.onsubmit = async function(e){}
-        form.reset()
-        window.location.href = 'index.html';
-      } else {
-        response.json().then(data => {
-          if (Object.hasOwn(data, 'errors')) {
-           alert(data["errors"].map(error => error["message"]).join(", "));
-          } else {
-            alert("Что-то пошло не так!")
-          }
-        })
-      }
-    }).catch(error => {
-      alert("Что-то пошло не так!")
-    });
-    
-    
-  }
+}
 
-  //let fileInput = document.getElementById('breefattach');
-  // fileInput.addEventListener('change', fileValidation);
-  function fileValidation() {
-  
-    let filePath = fileInput.value;
-  
+
+  function fileValidation() {  
+    let filePath = fileInput.value;  
     // Allowing file type
     let allowedExtensions =
   /(\.jpg|\.txt|\.pdf|\.word|\.png)$/i;
@@ -121,37 +86,12 @@ form.onsubmit = async function(e) {
         alert('Недопустимый тип файла');
         fileInput.value = '';
         return false;
-    }
-   
+    }   
   };
 
-//   xhr.open('POST', 'formsend.php', true);
-//   xhr.send(formData);
 
-//   form.reset();
-//   alert('Ваша форма отправлена, мы скоро с вами свяжемся, спасибо!');
-// };
-
-// let fileInput = document.getElementById('breefattach');
-// fileInput.addEventListener('change', fileValidation);
-
-// function fileValidation() {
-
-//   let filePath = fileInput.value;
-
-//   // Allowing file type
-//   let allowedExtensions =
-//     /(\.jpg|\.txt|\.pdf|\.word|\.png)$/i;
-
-//   if (!allowedExtensions.exec(filePath)) {
-//     alert('Недопустимый тип файла');
-//     fileInput.value = '';
-//     return false;
-//   }
-// };
-
-
-
+let fileInput = document.getElementById('breefattach');
+fileInput.addEventListener('change', fileValidation);
 //==============end form===========
 
 
@@ -171,7 +111,7 @@ clicking();
 //alert
 alertButton();
 
-//sizeInput();
+sizeInput();
 
 
 //фон

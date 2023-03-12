@@ -32,37 +32,37 @@ export function alertButton() {
 
     });
 
-    if(document.querySelector('#filebutton')){
-        const fileButton = document.querySelector('#filebutton');
-        fileButton.addEventListener('click', ()=>{
-            let error = 'Данная функция сейчас временно недоступна';
-            openAlert(error);
-        });
-    }
+    // if(document.querySelector('#filebutton')){
+    //     const fileButton = document.querySelector('#filebutton');
+    //     fileButton.addEventListener('click', ()=>{
+    //         let error = 'Данная функция сейчас временно недоступна';
+    //         openAlert(error);
+    //     });
+    // }
     
 
 
-    const alertCancel = document.querySelector('.alert__cancel');
+    // const alertCancel = document.querySelector('.alert__cancel');
 
-    if (alertCancel) {
-        // console.log(alertCancel)
-        alertCancel.addEventListener("click", function () {
-            alert.style.opacity = "0";
+    // if (alertCancel) {
+    //     // console.log(alertCancel)
+    //     alertCancel.addEventListener("click", function () {
+    //         alert.style.opacity = "0";
 
-            setTimeout(function () {
-                alert.classList.remove("_open-alert");
+    //         setTimeout(function () {
+    //             alert.classList.remove("_open-alert");
 
-            }, 400)
-        });
-    }
+    //         }, 400)
+    //     });
+    // }
 
-    alertContent.addEventListener('click', (event) => {
-        event.stopPropagation();
-    })
-    alert.addEventListener('click', () => {
-        alert.style.opacity = "0";
-        setTimeout (function() {
-            alert.classList.remove("_open-alert");
+    // alertContent.addEventListener('click', (event) => {
+    //     event.stopPropagation();
+    // })
+    // alert.addEventListener('click', () => {
+    //     alert.style.opacity = "0";
+    //     setTimeout (function() {
+    //         alert.classList.remove("_open-alert");
 
-        },400)    })
+    //     },400)    })
 }

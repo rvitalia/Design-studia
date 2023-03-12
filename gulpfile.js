@@ -152,7 +152,7 @@ function js(cb) {
             }
         }))
         //.pipe(webpack(require('./webpack.config.js')))
-        .pipe(sourcemaps.init())
+        // .pipe(sourcemaps.init())
         .pipe(webpackStream({
             mode: "production",
             entry: {
@@ -163,7 +163,7 @@ function js(cb) {
                 filename: '[name].js',
             },
         }))
-        .pipe(sourcemaps.write('../maps', { addComment: false }))
+        // .pipe(sourcemaps.write('../maps', { addComment: false }))
         //.pipe(sourcemaps.write())
         .pipe(dest(path.build.js))
         // .pipe(uglify())
@@ -192,7 +192,7 @@ function jsWatch(cb) {
                 this.emit('end');
             }
         }))
-        .pipe(sourcemaps.init())
+        // .pipe(sourcemaps.init())
         //.pipe(webpack(require('./webpack.config.js')))
         .pipe(webpackStream({
             mode: "production",
@@ -204,7 +204,7 @@ function jsWatch(cb) {
                 filename: '[name].js',
             },
         }))
-        .pipe(sourcemaps.write('../maps', { addComment: false }))
+        // .pipe(sourcemaps.write('../maps', { addComment: false }))
         //.pipe(sourcemaps.write())
         .pipe(dest(path.build.js))
         // .pipe(uglify())

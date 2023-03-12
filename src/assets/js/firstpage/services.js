@@ -17,7 +17,7 @@ export function changeColor() {
 export function openPopupServises(){
     const buttonsReadMore = document.querySelectorAll('[data-filter="servises"]');
     const popupServices = document.querySelector('#popupservices');
-    const popupBody = document.querySelector('.popup__services-body');
+    //const popupBody = document.querySelector('.popup__services-body');
     const body = document.querySelector('body');
 
     buttonsReadMore.forEach(element => {
@@ -30,7 +30,7 @@ export function openPopupServises(){
             },300)
         })
     });
-    console.log(popupServices)
+    //console.log(popupServices)
 }
 
 export function closePopupServises(){

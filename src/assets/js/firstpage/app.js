@@ -117,7 +117,7 @@ burger();
 //прорисовка линий
 VivusLines();
 //изменения цвета на "сервисах"
-changeColor();
+//changeColor();
 //открытие popupServices
 openPopupServises();
 //закрытие popupServices
